@@ -100,28 +100,26 @@ button:hover {
     font-size: 1.5rem;
     margin: 0 auto;
     width: 85%;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 /* Formação */
 
 .geral {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 5% 20%;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+    padding: 10rem;
 }
 
 .card {
     color: #fff;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: 0.5s;
     border: 2px solid #0077cc3d;
-    width: 300px;
-    max-width: 95%;
+    margin: 0 auto;
+    width: 85%;
 }
 
 .card:hover {
