@@ -1,149 +1,212 @@
+
+/* Estilos gerais */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #e2e9ee;
-  color: #000000;
+  background-color: #000000;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.interface {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.cabecalho {
-  background-color: #d3e0e2;
-  padding: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* Menu de navegação */
+
+h1 {
+    font-size: 250%;
+    font-weight: 700;
+    color: #ffffff;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
+    padding: 30px 4%;
 }
 
-.site-title {
-  font-size: 250%;
-  font-weight: 700;
-  color: #18284d;
+header > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-links a {
-  display: inline-block; /* Facilita ajustes de margem/padding */
-  margin-left: 1rem; /* Reduzido para mobile */
-  text-decoration: none;
-  color: #18284d;
-  font-size: 0.9rem; /* Tamanho menor para mobile */
-  font-weight: 500;
-  padding: 0.5rem 0; /* Espaçamento vertical */
+header a {
+    color: #6e6e6e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .1s;
 }
 
-.nav-links a:hover {
-  color: #ffffff;
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
 }
 
-.hero {
-  background: linear-gradient(to right, #718096, #a0aec0);
-  color: #ffffff;
-  padding: 6rem 1rem;
-  text-align: center;
+header nav ul {
+    list-style-type: none;
 }
 
-.hero-image {
-  max-width: 200px;
-  height: 200px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+/* Inicio */
+
+section div.interface {
+    padding: 100px 4%;
+    display: grid;
+    text-align: center;
+    color: #fff;
+    gap: 80px;
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+.minha-foto {
+    max-width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    transition: .5s;
 }
 
-.btn {
-  background-color: #ffffff;
-  color: #2d3748;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  text-decoration: none;
+.minha-foto:hover {
+    transform: scale(1.03);
 }
 
-.btn:hover {
-  background-color: #edf2f7;
+.texto-topo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
-.section {
-  padding: 4rem 1rem;
+button {
+    background-color: #0099ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: .1s;
+    font-size: large;
 }
 
-.bg-light {
-  background-color: #f1f5f9;
+button:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
 }
 
-.section-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-align: center;
+/* Sobre mim */
+
+.sobre-mim {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 600px;
 }
 
-.selection-text {
-  text-align: center;
+/* Formação */
+
+.geral {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 5% 20%;
 }
 
-.cards {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: 1000;
 }
 
 .card {
-  background: linear-gradient(to right, #718096, #a0aec0);
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+    border: 2px solid #0077cc3d;
 }
 
-.card-title {
-text-align: center;
-font-size: 1.25rem;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 12px #0077cc;
 }
 
-.bg-gray {
-  background-color: #edf2f7;
-  width: 50%;
-  margin: auto;
+.card i {
+    font-size: 3rem;
+    align-items: center;
+    color: #0077cc;
 }
 
-.acessar-documentos {
- text-align: center;
+/* Experiencia */
+
+.experiencia {
+    font-size: 1.1rem;
 }
 
-.contato {
-  background-color: #d3e0e2;
-  color: #1a202c;
-  text-align: center;
+.experiencias-profissionais {
+    color: #fff;
+    padding: 1% 0%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-.footer {
-  background-color: #2d3748;
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
+.card-experiencias {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    transition: 0.5s;
+    border: 2px solid #0077cc3d;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 600px;
 }
+
+.card-experiencias:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 12px #0077cc;
+}
+
+.card-experiencias strong {
+    font-size: 1.4rem;
+}
+
+.bi-suitcase-lg {
+    font-size: 3rem;
+    align-items: center;
+    color: #0077cc;
+}
+
+/* Certificados */
 
 .certificados {
-  text-align: center;
+    padding: 5% 30%;
+    color: #fff;
+    text-align: center;
+}
+
+.certificados h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.certificados a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Contato */
+
+.contato {
+    color: #ffffff;
+    text-align: center;
+    padding: 2% 30%;
+}
+
+.direitos {
+    background-color: #21252b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
 }
