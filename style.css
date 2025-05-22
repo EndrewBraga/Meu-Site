@@ -25,16 +25,19 @@ body {
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 250%;
   font-weight: 700;
   color: #18284d;
 }
 
 .nav-links a {
-  margin-left: 1.5rem;
+  display: inline-block; /* Facilita ajustes de margem/padding */
+  margin-left: 1rem; /* Reduzido para mobile */
   text-decoration: none;
   color: #18284d;
+  font-size: 0.9rem; /* Tamanho menor para mobile */
   font-weight: 500;
+  padding: 0.5rem 0; /* Espaçamento vertical */
 }
 
 .nav-links a:hover {
