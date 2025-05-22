@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #e2e5e7;
+  background-color: #e2e9ee;
   color: #000000;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .cabecalho {
-  background-color: #c0c0c0;
+  background-color: #d3e0e2;
   padding: 1.5rem 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -105,6 +105,7 @@ body {
 }
 
 .card {
+  background: linear-gradient(to right, #718096, #a0aec0);
   background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -113,6 +114,7 @@ body {
 
 .card-title {
 text-align: center;
+font-size: 1.25rem;
 }
 
 .bg-gray {
@@ -126,7 +128,7 @@ text-align: center;
 }
 
 .contato {
-  background-color: #c0c0c0;
+  background-color: #d3e0e2;
   color: #1a202c;
   text-align: center;
 }
