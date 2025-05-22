@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #e2e5e7;
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cabecalho {
+  background-color: #c0c0c0;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #18284d;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #18284d;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  background: linear-gradient(to right, #718096, #a0aec0);
+  color: #ffffff;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 200px;
+  height: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #2d3748;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #edf2f7;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.bg-light {
+  background-color: #f1f5f9;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.selection-text {
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+text-align: center;
+}
+
+.bg-gray {
+  background-color: #edf2f7;
+  width: 750px;
+  margin: auto;
+}
+
+.acessar-documentos {
+ text-align: center;
+}
+
+.contato {
+  background-color: #c0c0c0;
+  color: #1a202c;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2d3748;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.certificados {
+  text-align: center;
+}
