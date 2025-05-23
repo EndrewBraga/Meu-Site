@@ -1,16 +1,20 @@
-
 /* Estilos gerais */
 body {
+  /* Visual */
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  /* Posição e Tamanho */
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #000000;
 }
 
 .interface {
     max-width: 80%;
     margin: 0 auto;
 }
+
+
 
 /* Menu de navegação */
 
@@ -50,6 +54,8 @@ header nav ul li {
     display: inline-block;
     padding: 0 20px;
 }
+
+
 
 /* Inicio */
 
@@ -92,6 +98,8 @@ button:hover {
     transform: scale(1.05);
 }
 
+
+
 /* Sobre mim */
 
 .sobre-mim {
@@ -103,21 +111,28 @@ button:hover {
     max-width: 700px;
 }
 
+
+
 /* Formação */
 
-.geral {
+.cards {
     display: grid;
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 1rem;
 }
 
 .card {
+    /* Visual */
     color: #fff;
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    transition: 0.5s;
     border: 2px solid #0077cc3d;
-    margin: 0 auto;
-    width: 75%;
+    border-radius: 0.75rem;
+    /* Posição e Tamanho */
+    padding: 1rem; /*Espaçamento interno*/
+    margin-top: 1rem; /*Espaçamento em Cima*/
+    margin-bottom: 1rem; /*Espaçamento em Baixo*/
+    /* Animações */
+    transition: 0.5s;
 }
 
 .card:hover {
@@ -135,6 +150,8 @@ button:hover {
     font-size: 1.3rem;
     font-weight: 1000;
 }
+
+
 
 /* Experiencia */
 
