@@ -7,42 +7,36 @@ body {
     padding: 0;
 }
 
-.interface {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
 /* Menu de navegação */
 
-header {
-    padding: 30px;
-}
-
-header > .interface {
+.navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #10122496;
+    z-index: 100;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
-header a {
-    color: #6e6e6e;
+.menu {
+    display: flex;
+    gap: 13px;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}	
+
+.menu-link {
     text-decoration: none;
-    display: inline-block;
-    transition: .1s;
+    color: #ffffffc4;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-header a:hover {
+.menu-link:hover {
     color: #fff;
-    transform: scale(1.05);
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 20px;
 }
 
 /* Inicio */
@@ -59,15 +53,15 @@ section div.interface {
     max-width: 270px;
     height: 270px;
     border-radius: 50%;
-    transition: .5s;
 }
 
-.minha-foto:hover {
-    transform: scale(1.03);
+h1 {
+    font-size: 40px;
+    margin: 0;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -101,6 +95,10 @@ button:hover {
     width: 85%;
     max-width: 700px;
     margin-bottom: 150px;
+}
+
+.sobre {
+    font-size: 10px;
 }
 
 /* Formação */
@@ -143,15 +141,9 @@ h3 {
 
 /* Experiencia */
 
-.experiencia {
-    font-size: 1.1rem;
-    padding-top: 50px;
-}
-
 .experiencias-profissionais {
-    padding: 20px;
+    padding-top: 150px;
     text-align: center;
-    font-size: 40px;
 }
 
 .card-experiencias {
